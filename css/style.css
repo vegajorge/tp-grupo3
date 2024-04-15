@@ -3,14 +3,8 @@
   box-sizing: border-box;
 }
 body{
-<<<<<<< HEAD
-
-  background-image: url('../img/fondo1.jpg');
-  background-size: cover;
-=======
-  background-image: url(img/fondo1.jpg);
+  background-image: url(../img/fondo1.jpg);
   background-size: cover ;
->>>>>>> d4830801873fcbc49d0e2bd6a46a7cf5fa3788df
   background-repeat: no-repeat;
   backdrop-filter: blur(2px);
 }
