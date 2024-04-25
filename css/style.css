@@ -112,7 +112,7 @@ header{
   width: 120%;
 }
 
-main {
+.main {
   display: flex;
   align-items: right;
   justify-content: right;
@@ -284,4 +284,7 @@ footer p{
   .item-nav{
       color: #ecececec;
   }
-}
+
+  }
+
+
