@@ -25,14 +25,13 @@ header{
 }
 
 .logo-empresa{
-  width: 140px;
+  width: 100px;
   height: auto;
   position: absolute;
   left: 30px;
   border-radius: 2%;
   filter: brightness(150%);
 }
-
 
 .lista-nav{
   display: flex;
@@ -201,10 +200,17 @@ footer p{
   font-family: "Josefin Sans", sans-serif;
   color: #f3f5f4;
 }
-.contenedor-colapsar{
-  display: none;
-  }
 
+.abrir-menu {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+}
 
 @media screen and (max-width: 890px) {
 
@@ -212,38 +218,13 @@ footer p{
     font-size: 18px;
 
   }
-  .logo-empresa{
+  /*.logo-empresa{
     display: none;
-  }
- .contenedor-colapsar{
-    display: none;
- }
+  }*/
 
 }
 
 @media screen and (max-width: 550px) {
-  .abrir-menu,
-  .cerrar-menu {
-      display: block;
-      margin-top:10px;
-      border: 0;
-      font-size: 2rem;
-      background-color: transparent;
-      cursor: pointer;
-  }
- .contenedor-colapsar{
-    display:flex;
-    justify-content: right;
-    margin-top: 10px;
-  }
-
-  .abrir-menu {
-      color: #1c1c1c;
-  }
-
-  .cerrar-menu {
-      color: #2c0063;
-  }
 
   body{
     background: linear-gradient(90deg, rgba(110, 141, 199, 0.942) 70%, rgba(126, 229, 255, 0.953) 97%);
@@ -252,39 +233,45 @@ footer p{
     align-items: center;
     justify-content: center;
   }
-  .logo-empresa{
+  #logo-empresa{
     display: flex;
-    top: 10px;
-    
+   
   }
-  .barra-principal {
-      opacity: 0;
-      visibility: visible;
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-      gap: 0.5rem;
-      position: relative;
-      top: -10;
-      right: 0;
-      bottom: 0;
-      padding: 0.5rem;
+ .lista-nav {
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    background-color: rgba(40, 110, 239, 0.609);
+    position: fixed;
+    top: 120px;
+    left: -100%;
+    width: 100%;
+    padding: 20px 0;
+    transition: left 0.5s;
+    z-index: 1;
+  }
+ .abrir-menu {
+    display: block;
+  }
+  .lista-nav_visible {
+    left: 0;
+  }
+  .abrir-menu:focus:not(:focus-visible) {
+    outline: none;
   }
 
-  .barra-principal.visible {
-      opacity: 1;
-      visibility: visible;
+
+  .barra-carrusel-oculto {
+    display:none
   }
+  .footer-oculto{
+    display:none
+  }
+
+  }
+
+
+
   
- .lista-nav{
-      flex-direction: column;
-      align-items: end;
-  }
-
-  .item-nav{
-      color: #ecececec;
-  }
-
-  }
 
 

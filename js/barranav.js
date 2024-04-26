@@ -1,16 +1,20 @@
-const nav = document.querySelector("#nav");
-const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
+const navToggle = document.querySelector(".abrir-menu");
+const navMenu = document.querySelector(".lista-nav");
+const carrusel = document.querySelector('.barra-carrusel');
+const ocultarFooter = document.querySelector('.footer')
 
 
+navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("lista-nav_visible");
+  carrusel.classList.toggle('barra-carrusel-oculto');
+  ocultarFooter.classList.toggle('footer-oculto');
 
-abrir.addEventListener("click", () => {
-    nav.classList.add("visible");
-    abrir.style.display = "none"
+
+  if (navMenu.classList.contains("lista-nav")) {
+    navToggle.setAttribute("aria-label", "Cerrar menú");
     
-})
 
-cerrar.addEventListener("click", () => {
-    nav.classList.remove("visible");
-    abrir.style.display = "block"
-})
+  } else {
+    navToggle.setAttribute("aria-label", "Abrir menú");
+  }
+});
