@@ -1,5 +1,6 @@
 article{
     margin: 3rem 1rem 1rem 1rem ;
+    padding-top: 1rem;
     font-family: "Josefin Sans", sans-serif; 
     backdrop-filter: blur(8px);
     background-color: rgba(113, 204, 225, 0.525);
@@ -9,7 +10,8 @@ article{
 
 article h1{
     text-align: center;
-    margin: 1rem;
+    padding-top:1rem 0 ;
+    margin: 1rem 0 ;
     color: white;
     font-size: 2rem;
     text-shadow: 4px 4px 1px rgb(41, 41, 45)
@@ -26,8 +28,6 @@ article h3{
     margin: 1rem;
     color: white;
     text-shadow: 4px 4px 1px rgb(41, 41, 45)
-    
-
 }
 
 .imagen-nosotros{
@@ -50,17 +50,13 @@ figcaption{
     margin-top: 0.5rem;
 }
 
-
-
-
 .contenido-nosotros{
     backdrop-filter: blur(8px);
     background-color: rgba(113, 204, 225, 0.525);
     margin: 1rem;
-
 }
 
-p{    
+.contenido-nosotros{    
     font-style: italic;
     font-weight: 600;
     font-size: 20px;
@@ -80,4 +76,7 @@ p{
     .imagen-nosotros{
         width: auto;
     }
+    .contenido-nosotros{    
+         font-size: 15px;
+}
 }

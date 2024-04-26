@@ -25,7 +25,7 @@ header{
 }
 
 .logo-empresa{
-  width: 100px;
+  width: 90px;
   height: auto;
   position: absolute;
   left: 30px;
@@ -49,7 +49,7 @@ header{
   font-weight: 600;
   font-size: 20px;
   text-decoration: none;
-  margin: 15px;
+  /*margin: 15px;*/
   padding: 8px;
   color: rgb(255, 255, 255);
   position: relative;
@@ -111,16 +111,16 @@ header{
   width: 120%;
 }
 
-.main {
+.main-index {
   display: flex;
-  align-items: right;
-  justify-content: right;
+  align-items: center;
+  justify-content: center;
   margin: 2rem;
 }
 
 /* estilo del carrusel*/
 .barra-carrusel {
-  width: 300px;
+  width: 500px;
   text-align: center;
   overflow: hidden;
 }
@@ -145,8 +145,8 @@ header{
 .carrusel > div {
   scroll-snap-align: start;
   flex-shrink: 0;
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   margin-right: 50px;
   border-radius: 10px;
   background: #eee;
@@ -209,23 +209,34 @@ footer p{
   padding: 0 20px;
   line-height: 60px;
   cursor: pointer;
+}
 
+.clase-flecha {
+  display: none;
+  width: 40px;
+  position: sticky;
+  bottom: 10vh;
+  float: right;
+  margin-right: 2%;
+}
+.clase-flecha:hover {
+  filter: saturate(180%);
+  -webkit-transform:scale(1.3);
+  transform:scale(1.3);   
 }
 
 @media screen and (max-width: 890px) {
-
   .item-nav{
-    font-size: 18px;
+    font-size: 16px;
+    padding: 6px;
 
   }
   /*.logo-empresa{
     display: none;
   }*/
-
 }
 
 @media screen and (max-width: 550px) {
-
   body{
     background: linear-gradient(90deg, rgba(110, 141, 199, 0.942) 70%, rgba(126, 229, 255, 0.953) 97%);
   }
@@ -235,7 +246,6 @@ footer p{
   }
   #logo-empresa{
     display: flex;
-   
   }
  .lista-nav {
     flex-direction: column;
@@ -259,16 +269,20 @@ footer p{
   .abrir-menu:focus:not(:focus-visible) {
     outline: none;
   }
-
-
   .barra-carrusel-oculto {
     display:none
+  }
+  .carrusel > div {
+    width: 300px;
+    height: 300px;
+  }
+  .barra-carrusel {
+    width: 300px;
   }
   .footer-oculto{
     display:none
   }
-
-  }
+}
 
 
 
