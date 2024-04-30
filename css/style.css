@@ -256,7 +256,6 @@ footer p{
     top: 50px;
     left: -100%;
     width: 80%;
-    /*height: 150%;*/
     padding: 20px 0;
     transition: left 0.5s;
     z-index: 1;
