@@ -216,7 +216,7 @@ footer p{
   width: 40px;
   position: sticky;
   bottom: 10vh;
-  float: right;
+    float: right;
   margin-right: 2%;
 }
 .clase-flecha:hover {
@@ -253,12 +253,17 @@ footer p{
     margin: 0;
     background-color: rgba(40, 110, 239, 0.609);
     position: fixed;
-    top: 120px;
+    top: 20px;
     left: -100%;
-    width: 100%;
+    width: 80%;
+    height: 350%;
     padding: 20px 0;
     transition: left 0.5s;
     z-index: 1;
+  }
+  .item-nav{
+    font-size: 20px;
+    margin: 10px;
   }
  .abrir-menu {
     display: block;
