@@ -147,7 +147,7 @@
             ]
         });
         var image = {
-            url: 'img/map_pin.png',
+            url: '../img/map_pin.png',
             // This marker is 20 pixels wide by 32 pixels high.
             size: new google.maps.Size(50, 84),
             // The origin for this image is (0, 0).
