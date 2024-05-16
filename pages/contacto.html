@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto.css">
 
 
     <title>Insumos Informaticos</title>
@@ -40,11 +41,64 @@
         </nav>
     </header>
     <main>
-        <h1>contacto</h1>
+        <h1>Contactanos <small>dejanos un mensaje o acercate a nuestro local</small></h1>
+        <div class="items">
+            <div class="formulario" id="contacto">
+                <form name="form1" method="post" action='submit-to-sheet' role="form" data-toggle="validator" data-appear-animation="bounceIn" data-appear-animation-delay="600">
+                    <fieldset>
+                        <div class='form-group'>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name='nombre' id='nombre' placeholder='¿Como es tu nombre?' required data-error="Contanos como te llamas" >
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class='form-group correo'>
+                            <label for="email">Email</label>
+                            <input type="email" name='email' placeholder='Dejanos tu correo' required data-error="Este no parece un email valido">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class='form-group consulta'>
+                            <label for="consulta">Consulta</label>
+                            <textarea name='consulta' id='consulta' placeholder='Sobre que nos queres consultar?'></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <button type="submit" class="boton">
+                            <span class="envio">Enviar</span>
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="mapa">
+				<div id="mapGoogle"></div>
+                <div class="datos">
+                    <h5>DATOS DE CONTACTO</h5>
+                    <div class="data">
+                        <div>
+                            <h6>DIRECCIÓN:</h6>
+                            <p>Bonifacio 3151</p>
+                            <p>Ciudad Autónoma de Buenos Aires</p>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div>
+                            <h6>CELULAR:</h6>
+                            <a href="tel:+5491165441386">(+54 9 11) 6544-1386</a>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <div>
+                            <h6>EMAIL:</h6>
+                            <a href="mailto:info@insumosinformaticos.com.ar">info@insumosinformaticos.com.ar</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
     </main>
     <footer>
         <div><p>Copyright © Argentina 2024</p></div>
     </footer>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB3bmSqnGqR6csMnZscHut2XwoyfFsLA-A&language=es&callback=initMap' async defer></script>
+    <script src="../js/mapa.js"></script>
     <script src="../js/barranav.js"></script>
 </body>
 </html>

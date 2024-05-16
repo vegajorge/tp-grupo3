@@ -1,0 +1,183 @@
+main h1 {
+    text-align: center;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+}
+main h1 small {
+    font-weight: 300;
+    font-size: 35%;
+    display: block;
+    text-transform: uppercase;
+}
+
+
+main .items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 25px;
+    font-family: "Josefin Sans", sans-serif;
+}
+main .items .formulario {
+    width: 100%;
+    background: rgba(255,255,255, .8);
+    font-family: "Josefin Sans", sans-serif;
+}
+main .items .formulario fieldset {
+    border: none;
+    padding: 15px 25px 20px;
+}
+main .items .formulario label{
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+    padding: 20px 0 5px;
+    font-size: 80%;
+}
+main .items .formulario input,
+main .items .formulario textarea{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 90%;
+    color: #6f6f6f;
+    width: 100%;
+    padding: 8px;
+    -webkit-transition: all 0.5s ease; /* Safari 3.1 to 6.0 */
+    -o-transition: all 0.5s ease;
+    moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+main .items .formulario input::placeholder,
+main .items .formulario textarea::placeholder{
+    color: #afafaf;
+}
+main .items .formulario input:focus,
+main .items .formulario textarea:focus{
+    border: 2px solid  #0898ff;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+main .items .formulario textarea{
+    height: 180px;
+} 
+main .items .formulario .boton{
+    border: none;
+    background: #199fff;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 80%;
+    text-transform: uppercase;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 5px;
+    width: 100%;
+    -webkit-transition: all 0.5s ease; /* Safari 3.1 to 6.0 */
+    -o-transition: all 0.5s ease;
+    moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+} 
+main .items .formulario .boton:hover,
+main .items .formulario .boton:focus{
+    outline: none;
+    background: rgb(0, 187, 255);
+    border-radius: 0;
+}
+
+main .mapa   {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+
+}
+main .mapa .datos  {
+    position: relative;
+    width: 100%;
+    background: rgba(0, 187, 255, .85);
+    color: white;
+    padding: 25px;
+    border-radius: 0 0 10px 10px ;
+}
+main .mapa .datos h5 {
+    font-weight: 300;
+    font-size: 1.375rem;
+}
+main .mapa .datos h6 {
+    font-weight: 700;
+    font-size: .875rem;
+    padding: 15px 0 5px;
+}
+main .mapa .datos p {
+    font-weight: 300;
+}
+main .mapa .datos a {
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease; /* Safari 3.1 to 6.0 */
+    -o-transition: all 0.5s ease;
+    moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    padding: 2px;
+}
+main .mapa .datos a:hover {
+    background: #fff;
+    color: rgb(0, 187, 255);
+}
+
+main .mapa #mapGoogle {
+    height: 450px;
+    margin: 20px 0 0;
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+
+@media screen and (min-width: 768px) {
+
+
+    main .items .formulario {
+        max-width: 350px;
+    }
+    main .mapa {
+        margin: 0;
+        max-width: calc(100% - 355px);
+    }
+    main .mapa #mapGoogle {
+        border-radius: 0 10px 0 0;
+        margin: 0 0 0 15px;
+        width: calc(100% - 15px);
+    }
+    main .mapa .datos  {
+        width: calc(100% - 15px);
+        margin-left: 15px;
+        border-radius: 0 0 10px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main .mapa #mapGoogle {
+        margin: 0 0 0 15px;
+        border-radius: 0 10px 10px 0;
+    }
+    main .mapa .datos  {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: auto;
+        background: rgba(0, 187, 255, .95);
+        padding: 25px 35px;
+    }
+    
+}
