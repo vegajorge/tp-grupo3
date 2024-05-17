@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: #a1c3e6;
+  border-radius: 10px;
+}
+.container-hero--title {
+  width: 100%;
+  color: black;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.container-hero--title h2,
+.container-hero--title h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.container-hero--title h3 {
+  font-size: 15px;
+}
+
+.container-hero-content {
+  display: flex;
+}
+.container-hero-content--left {
+  flex-basis: 80%;
+  padding: 10px;
+  text-align: justify;
+  margin-left: 5px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.container-hero-content--left p {
+  color: white;
+  font-size: 15px;
+  color: black;
+}
+.container-hero-content--right {
+  /* border: 1px solid black; */
+  flex-basis: 20%;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.container-hero-content--right img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+}
+.container-services--title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.container-services-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.container-services-content-card {
+  text-align: center;
+  flex-basis: 150px;
+  flex-grow: 1;
+  background: white;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #cccc;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-bottom: 30px;
+}
+
+.container-services-content-card-title .fa-code,
+.container-services-content-card-title .fa-map-location,
+.container-services-content-card-title .fa-mobile-screen-button,
+.container-services-content-card-title .fa-docker,
+.container-services-content-card-title .fa-stack-overflow {
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #15aedb;
+}
+
+.container-services-content-card-content h3 {
+  font-size: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.container-services-content-card-content p {
+  font-size: 13px;
+  text-align: left;
+  color: gray;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .container-hero-content .container-hero-content--left p {
+    width: 100%;
+    text-align: justify;
+    margin-left: 50px;
+  }
+  .container-hero-content--right img {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-hero--title h2,
+  .container-hero--title h3 {
+    /* width: 100%; */
+    font-size: 15px;
+  }
+}

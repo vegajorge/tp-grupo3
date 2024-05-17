@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,43 +8,176 @@
     <meta name="description" content="Proyecto Desarrollo Web HTML, CSS y Javascript">
     <meta name="keywords" content="Informatica, Insumos ,Computacion">
     <meta property="og:title" content="TPO Desarrollo Web comision 24127 grupo 3">
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content="article">
     <meta property="og:url" content=" https://vegajorge.github.io/tp-grupo3/index.html">
     <meta property="og:image" content="https://vegajorge.github.io/tp-grupo3/img/notebook.jpg">
     <meta property="og:image:alt" content="imagen pagina">
     <meta property="og:image:width" content="40px">
     <meta property="og:image:height" content="40px">
-    <meta property="og:description" content="Pagina dedicada a la venta de insumos informaticos">
+    <meta property="og:description"content="Pagina dedicada a la venta de insumos informaticos">
     <link rel="icon" href="../img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
-
-
+    <link rel="stylesheet" href="../css/servicios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Insumos Informaticos</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-           <a href="../index.html"> <img src="../img/logo3.png" class="logo-empresa" alt="imagen logo empresa"></a>
+      <header>
+        <a href="../index.html"> <img src="../img/logo3.png" class="logo-empresa" alt="imagen logo empresa"></a>
         <nav class="barra-principal" id="nav">
             <ul class="lista-nav">
                 <li class="item-lista"><a class="item-nav" href="../index.html">Inicio</a></li>
                 <li class="item-lista"><a class="item-nav" href="../pages/productos.html">Productos</a></li>
-                <li class="item-lista"><a class="item-nav" href="pages/servicios.html">Servicios</a></li>
+                <li class="item-lista"><a class="item-nav" href="servicios.html">Servicios</a></li>
                 <li class="item-lista"><a class="item-nav" href="../pages/nosotros.html">Nosotros</a></li>
-                <li class="item-lista"><a class="item-nav" href="../pages/contacto.html">Contacto</a></li>
-            </ul>    
+                <li class="item-lista"><a class="item-nav" href="..pages/contacto.html">Contacto</a></li>
+            </ul>
             <button id="abrir" class="abrir-menu" aria-label="Abrir menú" ><i class="bi bi-list" ></i></button>
         </nav>
     </header>
     <main>
-        <h1>servicios</h1>
+      <section id="container" class="container">
+        <article>
+          <div class="container-hero">
+            <div class="container-hero--title">
+              <h2>Servicios informáticos</h2>
+              <h3>
+                Nuestra empresa proporciona servicios informáticos altamente
+                eficientes además de un servicio integral que engloba todos los
+                servicios de distintas áreas.
+              </h3>
+            </div>
+            <div class="container-hero-content">
+              <div class="container-hero-content--left">
+                <p>
+                  Solusoft dispone de diversas unidades de negocio ampliamente
+                  especializadas en ofrecer soluciones y servicios informáticos
+                  eficientes en su correspondiente área de trabajo. Como
+                  consultoría informática ofrece, además, la posibilidad de un
+                  servicio integral, en lo que a Tecnologías de la Información
+                  se refiere, desde el diseño del plan de sistemas de
+                  información hasta la implantación y mantenimiento de los
+                  mismos, para que cualquier empresa u organización pueda contar
+                  con la solución informática adecuada y óptima en todo momento,
+                  y en línea con sus objetivos.
+                </p>
+                <p>
+                  Las soluciones en esos casos pueden englobar diversas áreas de
+                  actuación de servicios informáticos, y serán ejecutadas desde
+                  distintas unidades de la compañía. Pero serán planificadas y
+                  puestas en marcha de manera unificada, encargándose nuestros
+                  profesionales de establecer una planificación de los servicios
+                  totalmente sincronizada, que el cliente vea como única.
+                </p>
+              </div>
+              <div class="container-hero-content--right">
+                <img src="../img/descarga.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </article>
+        <section>
+          <article>
+            <div class="container-services">
+              <div class="container-services--title">
+                <h2>Servicios</h2>
+              </div>
+              <div class="container-services-content">
+                <!-- inicio de cards -->
+                <div class="container-services-content-card">
+                  <!-- detalle de cards -->
+                  <div class="container-services-content-card-title">
+                    <span><i class="fa-solid fa-code"></i></span>
+                  </div>
+                  <div class="container-services-content-card-content">
+                    <h3>Desarrollo de Software</h3>
+                    <p>
+                      Somos una empresa especializada en el desarrollo de
+                      software, aplicando las tecnologías que mejor se adaptan a
+                      las necesidades de nuestros clientes.
+                    </p>
+                  </div>
+                  <!-- cierre de detalle de cards -->
+                </div>
+                <!-- fin de cards -->
+                <div class="container-services-content-card">
+                  <!-- detalle de cards -->
+                  <div class="container-services-content-card-title">
+                    <span><i class="fa-solid fa-map-location"></i></span>
+                  </div>
+                  <div class="container-services-content-card-content">
+                    <h3>Sistemas de Información Geográfica</h3>
+                    <p>
+                      Con los Sistemas de Información Geográfica (GIS), creamos
+                      la solución para capturar, analizar y sacar el máximo
+                      valor de los datos espaciales.
+                    </p>
+                  </div>
+                  <!-- cierre de detalle de cards -->
+                </div>
+                <div class="container-services-content-card">
+                  <!-- detalle de cards -->
+                  <div class="container-services-content-card-title">
+                    <span
+                      ><i class="fa-solid fa-mobile-screen-button"></i
+                    ></span>
+                  </div>
+                  <div class="container-services-content-card-content">
+                    <h3>Aplicaciones de movilidad</h3>
+                    <p>
+                      Las aplicaciones de movilidad que desarrollamos te ayudan
+                      a vender más, trabajar de forma más productiva o controlar
+                      toda la información de tu negocio.
+                    </p>
+                  </div>
+                  <!-- cierre de detalle de cards -->
+                </div>
+                <div class="container-services-content-card">
+                  <!-- detalle de cards -->
+                  <div class="container-services-content-card-title">
+                    <span><i class="fa-brands fa-docker"></i></span>
+                  </div>
+                  <div class="container-services-content-card-content">
+                    <h3>Software Gestión Empresarial</h3>
+                    <p>
+                      Somos partner gold de las más avanzadas herramientas de
+                      gestión empresarial del mercado, como a3ERP, de Wolters
+                      Kluwer o Microsoft Business Central.
+                    </p>
+                  </div>
+                  <!-- cierre de detalle de cards -->
+                </div>
+                <div class="container-services-content-card">
+                  <!-- detalle de cards -->
+                  <div class="container-services-content-card-title">
+                    <span><i class="fa-brands fa-stack-overflow"></i></span>
+                  </div>
+                  <div class="container-services-content-card-content">
+                    <h3>Gestión de Sistemas</h3>
+                    <p>
+                      Estudiamos las necesidades de los clientes, diseñamos su
+                      infraestructura y brindamos soporte y mantenimiento
+                      informático de los sistemas. También contamos con
+                      servicios informáticos cloud.
+                    </p>
+                  </div>
+                  <!-- cierre de detalle de cards -->
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+      <!-- servicios -->
     </main>
     <footer>
-        <div><p>Copyright © Argentina 2024</p></div>
+      <div><p>Copyright © Argentina 2024</p></div>
     </footer>
     <script src="../js/barranav.js"></script>
-</body>
+  </body>
 </html>
